@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Inter";
+    src: url(../Assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+@theme{
+    --font-primary:"Inter";
+    --color-primary:#00236F;
+    --color-secondary:#FEA619;
+    --color-third:#684000;
+    --color-background:#E2E7FF;
+    --color-quarter:#855300;
+    --color-inverted:#444651;
+    --color-bold:#131B2E;
+    --breakpoint-xs:440px;
+}
+
+@layer base{
+    body{
+        font-family: var(--font-primary)
+    }
+    .container{
+        @apply mx-auto;
+        @apply px-2;
+        @apply md:px-0;
+    }
+    button{
+        cursor: pointer; 
+    }
+    h1{
+        font-size: 3rem;
+        line-height: 3.75rem;
+        font-weight: 700;
+        color: #00236F;
+    }
+    h2{
+        font-size: 2;
+        line-height: 2.5;
+        font-weight: 700;
+        color: #00236F;
+    }
+}
+
+@utility nav-link{
+    @apply font-medium text-sm text-inverted leading-[20px] hover:text-primary hover:font-bold transition-all ; 
+}
+@utility head-button{
+    @apply font-bold text-sm text-inverted leading-[20px] px-[24px] py-[8px] rounded-[8px]
+}
+@utility row{
+    @apply flex items-center;
+}
+@utility hero{
+    @apply bg-radial from-background to-[#FAF8FF]; 
+}
