@@ -14,11 +14,10 @@
         <div class="container flex justify-between text-center items-center py-3.5">
             <div class="flex gap-12 items-center">
                 <div class="logo">
-                    <a href="./index.html"
-                        class="text-primary font-bold text-xl lg:text-2xl text-shadow-sm hover:text-shadow-md">Alphabet
-                        English Academy</a>
+                    <a href="./index.html" class="logo-font">
+                        Alphabet English Academy
+                    </a>
                 </div>
-
                 <nav class="hidden lg:block">
                     <ul class="flex gap-8 trxt-inverted">
                         <li><a href="./courses.html" class="nav-link">Courses</a></li>
@@ -30,68 +29,89 @@
                 </nav>
             </div>
             <div class="menu md:hidden hover:cursor-pointer">
-                <img src="./Assets/imgs/header/menu.svg" alt="Menu">
+                <img src="./Assets/imgs/header/menu.svg" alt="Menu" />
             </div>
             <div class="hidden md:row  gap-6">
                 <a href="./placement.html" class="head-button text-primary hover:bg-background transition-all">
                     Placement Test
                 </a>
-                <a href="./reg.html"
-                    class="head-button bg-secondary text-third apply-shadow">
+                <a href="./reg.html" class="head-button bg-secondary text-third apply-shadow">
                     Free Trial
                 </a>
                 <div>
                     <ul class="flex gap-[7.99px]">
-                        <li><button class=""><img src="./Assets/imgs/header/lang.svg" alt="language"></button></li>
-                        <li><a href="./dashboard.html"><img src="./Assets/imgs/header/avatar.svg" alt="avatar"></a></li>
+                        <li><button class=""><img src="./Assets/imgs/header/lang.svg" alt="language" /></button></li>
+                        <li><a href="./dashboard.html"><img src="./Assets/imgs/header/avatar.svg" alt="avatar" /></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    <section class="hero py-32 max-lg:bg-[url(../Assets/imgs/hero/hero-mobile.webp)] max-lg:h-screen relative bg-no-repeat bg-center bg-cover">
-        <div class="z-10 container">
-            <div class="row gap-12">
-                <div class="lg:w-1/2 col lg:items-start gap-6">
-                    <div class="col items-start gap-6">
-                        <span class=" lg:hidden bg-secondary hero-tag">
+    <section class="hero lg:py-32">
+        <div class="mobilehero">
+            <div class=" py-32 backgroun bg-[url(../Assets/imgs/hero/hero-mobile.webp)] h-screen relative bg-no-repeat bg-center bg-cover col justify-end lg:hidden">
+                <div class="z-10 container">
+                    <div class="col items-start pb-xl gap-6">
+                        <span class="bg-secondary hero-tag">
                             CEFR-Aligned Curriculum
                         </span>
-                        <span class="hidden lg:block bg-background hero-tag">
-                            LIVE ONLINE ACADEMY
-                        </span>
                         <h1 class="max-lg:text-[#FFFFFF]">
-                            Speak English with Confidence<span class="hidden lg:block"> — Live Classes with <span
-                                    class="text-quarter">Certified Tutors</span></span>
+                                Speak English with Confidence
                         </h1>
                         <p class="max-lg:text-[#F2F3FF]">
                             Master English naturally through immersive live sessions, personalized feedback, and a
                             curriculum
                             aligned with global CEFR standards.
                         </p>
-                    </div>
-                    <div class="col max-lg:w-full lg:row lg:items-start gap-[24px]">
-                        <a href="reg.html"
-                            class="z-10 max-lg:w-full hero-button bg-secondary text-third apply-shadow">
+                        <a href="reg.html" class="z-10 w-full hero-button bg-secondary text-third apply-shadow">
                             Start Free Trial
                         </a>
+                    
                         <a href="./placement.html"
-                            class="max-lg:hidden hero-button text-primary border border-[#C5C5D3] apply-shadow">Take
-                            Placement
-                            Test</a>
-                        <a href="./placement.html"
-                            class="z-10 lg:hidden w-full hero-button text-[#FFFFFF] bg-[#FFFFFF1A] border border-[#FFFFFF33] apply-shadow">View
+                            class="z-10 w-full hero-button text-[#FFFFFF] bg-[#FFFFFF1A] border border-[#FFFFFF33] apply-shadow">View
                             Pricing</a>
                     </div>
                     <div
                         class="absolute inset-0 bg-linear-to-t from-primary via-transparent to-transparent opacity-80 lg:hidden">
                     </div>
                 </div>
-                <div class="w-1/2 max-lg:hidden flex justify-end">
-                    <img src="./Assets/imgs/hero/hero.webp" alt="Hero img" class="hero-img" />
+            </div>
+            <div class="absolute inset-0 bg-linear-to-t from-primary via-transparent to-transparent opacity-80 lg:hidden">
+            </div>
+        </div>
+        <div class="max-lg:hidden">
+            <div class="z-10 container">
+                <div class="row gap-12">
+                    <div class="w-1/2 items-start col gap-6">
+                        <div class="col items-start gap-6">
+                            <span class="bg-background hero-tag">
+                                LIVE ONLINE ACADEMY
+                            </span>
+                            <h1>
+                                Speak English with Confidence<span> — Live Classes with <span class="text-quarter">Certified Tutors</span></span>
+                            </h1>
+                            <p>
+                                Master English naturally through immersive live sessions, personalized feedback, and a
+                                curriculum
+                                aligned with global CEFR standards.
+                            </p>
+                        </div>
+                        <div class="row items-start gap-6">
+                            <a href="reg.html" class=" hero-button bg-secondary text-third apply-shadow">
+                                Start Free Trial
+                            </a>
+                            <a href="./placement.html" class="max-lg:hidden hero-button text-primary border border-[#C5C5D3] apply-shadow">
+                                Take Placement Test
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-1/2 max-lg:hidden flex justify-end">
+                        <img src="./Assets/imgs/hero/hero.webp" alt="Hero img" class="hero-img" />
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
     <section class="TrustBar max-lg:hidden bg-background py-8">
         <div class="container">
@@ -136,7 +156,7 @@
             </div>
         </div>
     </section>
-    <section class="max-md:hidden Howitworks py-12">
+    <section class="Howitworks max-md:hidden py-12">
         <div class="container">
             <div class="text-center pb-12">
                 <h2>
@@ -194,6 +214,7 @@
             </div>
         </div>
     </section>
+    
 </body>
 
 </html>

@@ -28,16 +28,22 @@
         cursor: pointer; 
     }
     h1{
-        font-size: 3rem;
-        line-height: 3.75rem;
+        font-size: 1.75rem;
+        line-height: 2.25rem;
         font-weight: 700;
         color: #00236F;
+        @variant md{
+            font-size: 3rem;
+            line-height: 3.75rem;
+            font-weight: 700;
+        }
     }
     h2{
         font-size: 2rem;
         line-height: 2.5rem;
         font-weight: 700;
         color: #00236F;
+        
     }
     h3{
         font-size: 1.25rem;
@@ -51,15 +57,20 @@
         font-weight: 600;
         color: #444651;
     }
+    
+    
 }
 @utility apply-shadow{
     @apply shadow-sm hover:shadow-md transition-all;
+}
+@utility logo-font{
+    @apply text-primary font-bold text-xl lg:text-2xl text-shadow-sm hover:text-shadow-md;
 }
 @utility nav-link{
     @apply font-medium text-sm text-inverted leading-5 hover:text-primary hover:font-bold transition-all ; 
 }
 @utility head-button{
-    @apply font-bold text-sm text-inverted leading-5 px-6 py-2 rounded-lg
+    @apply font-bold text-sm text-inverted leading-5 px-6 py-2 rounded-lg;
 }
 @utility row{
     @apply flex flex-row items-center;
@@ -86,7 +97,7 @@
     @apply font-semibold text-xs text-inverted leading-4;
 }
 @utility how-work{
-    @apply col gap-[8px] 
+    @apply col gap-[8px] hover:shadow-md hover:translate-1 transition-all hover:cursor-pointer;
 }
 @utility iconborder{
     @apply w-16 h-16 bg-background flex items-center justify-center rounded-2xl;
