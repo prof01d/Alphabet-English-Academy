@@ -42,8 +42,7 @@
         font-size: 2rem;
         line-height: 2.5rem;
         font-weight: 700;
-        color: #00236F;
-        
+        color: #00236F; 
     }
     h3{
         font-size: 1.25rem;
@@ -57,8 +56,6 @@
         font-weight: 600;
         color: #444651;
     }
-    
-    
 }
 @utility apply-shadow{
     @apply shadow-sm hover:shadow-md transition-all;
@@ -82,7 +79,7 @@
     @apply bg-radial from-background to-[#FAF8FF]; 
 }
 @utility hero-button{
-    @apply font-bold text-sm text-third leading-5 px-12 py-6 rounded-xl text-center;
+    @apply font-bold text-sm text-third leading-5 px-12 py-6 rounded-xl text-center max-lg:w-full;
 }
 @utility hero-img{
     @apply border-4 rounded-3xl border-white shadow-2xl drop-shadow-2xl blur-[50];
