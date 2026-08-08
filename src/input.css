@@ -50,6 +50,12 @@
         font-weight: 700;
         color: #131B2E;
     }
+    h4{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 700;
+        color: #131B2E;
+    }
     p{
         font-size: 1rem;
         line-height: 1.5rem;
@@ -110,4 +116,7 @@
 }
 @utility git-gap{
     @apply gap-x-6 gap-y-8.5;
+}
+@utility grid-whyUs{
+    @apply rounded-2xl border border-[#C5C5D3] bg-background p-8 col items-start justify-between gap-2;
 }
