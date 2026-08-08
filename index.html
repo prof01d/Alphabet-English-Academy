@@ -60,7 +60,7 @@
                             Speak English with Confidence<span> — Live Classes with <span class="text-quarter">Certified
                                     Tutors</span></span>
                         </h1>
-                        <p>
+                        <p class="text-lg/7.5">
                             Master English naturally through immersive live sessions, personalized feedback, and a
                             curriculum
                             aligned with global CEFR standards.
@@ -125,7 +125,7 @@
             </div>
         </div>
     </section>
-    <section class="Howitworks max-md:hidden py-12">
+    <section class="Howitworks py-12">
         <div class="container">
             <div class="text-center pb-12">
                 <h2>
@@ -135,7 +135,7 @@
                     Four simple steps to transform your English communication skills.
                 </p>
             </div>
-            <div class="row gap-6 text-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
                 <div class="how-work">
                     <div class="iconborder">
                         <img src="./Assets/imgs/howwork/placement.svg" alt="Notes Icon">
@@ -143,7 +143,7 @@
                     <h3 class="mt-4">
                         1. Take Placement Test
                     </h3>
-                    <p>
+                    <p class="how-work-p">
                         A quick 15-minute diagnostic to determine your current CEFR level.
                     </p>
                 </div>
@@ -154,7 +154,7 @@
                     <h3 class="mt-4">
                         2. Get Matched
                     </h3>
-                    <p>
+                    <p class="how-work-p">
                         Connect with a certified tutor specialized in your unique learning goals.
                     </p>
                 </div>
@@ -165,7 +165,7 @@
                     <h3 class="mt-4">
                         3. Start Learning
                     </h3>
-                    <p>
+                    <p class="how-work-p">
                         Join live 1-on-1 or group classes using our interactive digital platform.
                     </p>
                 </div>
@@ -176,7 +176,7 @@
                     <h3 class="mt-4">
                         4. Track Progress
                     </h3>
-                    <p>
+                    <p class="how-work-p">
                         Regular assessments and detailed feedback reports to see your growth.
                     </p>
                 </div>
@@ -184,7 +184,74 @@
         </div>
     </section>
     <section class="programs">
-        <div class="container ">
+        <div class="container col items-start gap-12 py-12">
+            <div class="w-full flex justify-between items-end">
+                <div>
+                    <h2>
+                        Specialized Programs
+                    </h2>
+                    <p>
+                        Curated paths for every professional and academic aspiration.
+                    </p>
+                </div>
+                <a href="./courses.html" class="hidden md:row gap-2 links-learnmore">View All Courses<span><img src="./Assets/imgs/programs/arrow.svg" alt="arrow" /></span></a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 git-gap">
+                <div class="md:col-span-2 grid-card">
+                    <div class="w-full flex justify-between items-start">
+                        <img src="./Assets/imgs/programs/GeneralEnglish.svg" alt="General" />
+                        <span class="bg-background px-1 py-2 rounded-sm text-[#1D4ED8] text-[10px] leading-3.75 font-bold">ALL LEVELS</span>
+                    </div>
+                    <h3 class="mt-8">
+                        General English
+                    </h3>
+                    <p>
+                        Build confidence in everyday communication. Focus on fluency, ronunciation, and social interactions across real-world scenarios.
+                    </p>
+                    <a href="#" class="row gap-4 links-learnmore">
+                        Explore <span><img src="./Assets/imgs/programs/gridarrow.svg" alt="gridarrow.svg"></span>
+                    </a>
+                </div>
+                <div class="grid-card">
+                    <div>
+                        <img src="./Assets/imgs/programs/businessbag.svg" alt="Business-bag">
+                    </div>
+                    <h3 class="mt-8">
+                        Business English
+                    </h3>
+                    <p>
+                        Master professional emails, negotiations, and presentation skills.
+                    </p>
+                    <a href="#" class="links-learnmore">
+                        Explore
+                    </a>
+                </div>
+                <div class="grid-card">
+                    <div>
+                        <img src="./Assets/imgs/programs/prepare.svg" alt="prepare">
+                    </div>
+                    <h3 class="mt-8">
+                        Exam Prep
+                    </h3>
+                    <p>
+                        Targeted preparation for IELTS, TOEFL, and Cambridge exams.
+                    </p>
+                    <a href="#" class="links-learnmore">
+                        Explore
+                    </a>
+                </div>
+                <div class="Kids grid-card p-0 bg-background md:col-span-4 col md:row">
+                    <div class="col items-start gap-4 p-12 lg:pr-[186.67px]">
+                        <span class="inline-block bg-white/50 rounded-full px-4 py-1 text-xs/3 text-primary font-bold">AGES 6-17</span>
+                        <h3 class="text-primary">Kids & Teens Academy</h3>
+                        <p class="">Gamified learning and age-appropriate content to help the next generation become global citizens with native-level fluency.</p>
+                        <button class="">Learn More</button>
+                    </div>
+                    <div class="z-10 h-full w-full md:w-1/2 lg:w-1/3">
+                        <img src="./Assets/imgs/programs/teenagers.webp" alt="teenagers" class="h-full w-full">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>

@@ -50,10 +50,10 @@
         font-weight: 700;
         color: #131B2E;
     }
-    .Howitworks .row p{
-        font-size: 0.75rem;
-        line-height: 1rem;
-        font-weight: 600;
+    p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
         color: #444651;
     }
 }
@@ -61,7 +61,7 @@
     @apply shadow-sm hover:shadow-md transition-all;
 }
 @utility logo-font{
-    @apply text-primary font-bold text-xl lg:text-2xl text-shadow-sm hover:text-shadow-md;
+    @apply text-primary font-bold text-xl/8 lg:text-2xl text-shadow-sm hover:text-shadow-md;
 }
 @utility nav-link{
     @apply font-medium text-sm text-inverted leading-5 hover:text-primary hover:font-bold transition-all ; 
@@ -88,14 +88,26 @@
     @apply w-fit rounded-full text-primary text-[12px] font-bold leading-4 tracking-[0.36px] px-4 py-2
 }
 @utility trustbar{
-    @apply font-bold text-2xl text-primary leading-8;
+    @apply font-bold text-2xl/8 text-primary;
 }
 @utility trustbar2{
     @apply font-semibold text-xs text-inverted leading-4;
 }
 @utility how-work{
-    @apply col gap-[8px] hover:shadow-md hover:translate-1 transition-all hover:cursor-pointer;
+    @apply col gap-2 hover:shadow-md hover:translate-1 transition-all hover:cursor-pointer;
+}
+@utility how-work-p{
+    @apply text-xs/4 font-semibold;
 }
 @utility iconborder{
     @apply w-16 h-16 bg-background flex items-center justify-center rounded-2xl;
+}
+@utility links-learnmore{
+    @apply  text-primary text-base/6 font-bold mt-8;
+}
+@utility grid-card{
+    @apply rounded-2xl border border-[#C5C5D3] px-8 pt-8 pb-9 col items-start justify-between gap-4;
+}
+@utility git-gap{
+    @apply gap-x-6 gap-y-8.5;
 }
