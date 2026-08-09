@@ -42,25 +42,31 @@
         font-size: 2rem;
         line-height: 2.5rem;
         font-weight: 700;
-        color: #00236F; 
+        color:#00236F; 
     }
     h3{
         font-size: 1.25rem;
         line-height: 1.75rem;
         font-weight: 700;
-        color: #131B2E;
+        color:#131B2E;
     }
     h4{
         font-size: 1.25rem;
         line-height: 1.75rem;
         font-weight: 700;
-        color: #131B2E;
+        color:#131B2E;
+    }
+    h5{
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+        color:#131B2E;
     }
     p{
         font-size: 1rem;
         line-height: 1.5rem;
         font-weight: 400;
-        color: #444651;
+        color:#444651;
     }
 }
 @utility apply-shadow{
@@ -117,6 +123,6 @@
 @utility git-gap{
     @apply gap-x-6 gap-y-8.5;
 }
-@utility grid-whyUs{
-    @apply rounded-2xl border border-[#C5C5D3] bg-background p-8 col items-start justify-between gap-2;
+@utility grid-card{
+    @apply rounded-2xl border border-[#C5C5D3] bg-[#F2F3FF] p-8 col items-start justify-between gap-2;
 }

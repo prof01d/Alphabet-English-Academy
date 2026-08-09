@@ -16,7 +16,6 @@
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
-    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
@@ -41,6 +40,7 @@
     --color-background: #E2E7FF;
     --color-quarter: #855300;
     --color-inverted: #444651;
+    --color-bold: #131B2E;
   }
 }
 @layer base {
@@ -192,8 +192,20 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
   .sticky {
     position: sticky;
+  }
+  .top-4 {
+    top: calc(var(--spacing) * 4);
+  }
+  .right-4 {
+    right: calc(var(--spacing) * 4);
   }
   .z-10 {
     z-index: 10;
@@ -269,21 +281,10 @@
       }
     }
   }
-  .grid-whyUs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: calc(var(--spacing) * 2);
-    border-radius: var(--radius-2xl);
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-    border-color: #C5C5D3;
-    background-color: var(--color-background);
-    padding: calc(var(--spacing) * 8);
-  }
   .grid-card {
+    gap: calc(var(--spacing) * 2);
+    background-color: #F2F3FF;
+    padding: calc(var(--spacing) * 8);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -319,9 +320,6 @@
   }
   .inline-block {
     display: inline-block;
-  }
-  .table {
-    display: table;
   }
   .h-full {
     height: 100%;
@@ -359,14 +357,8 @@
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -445,6 +437,9 @@
   .border-\[\#C5C5D3\] {
     border-color: #C5C5D3;
   }
+  .bg-\[\#1E3A8A1A\] {
+    background-color: #1E3A8A1A;
+  }
   .bg-\[\#FAF8FF\] {
     background-color: #FAF8FF;
   }
@@ -453,9 +448,6 @@
   }
   .bg-secondary {
     background-color: var(--color-secondary);
-  }
-  .bg-white {
-    background-color: var(--color-white);
   }
   .bg-white\/50 {
     background-color: color-mix(in srgb, #fff 50%, transparent);
@@ -479,6 +471,9 @@
   .px-1 {
     padding-inline: var(--spacing);
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -491,9 +486,6 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
-  }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
   }
@@ -505,6 +497,9 @@
   }
   .py-32 {
     padding-block: calc(var(--spacing) * 32);
+  }
+  .py-\[1\.5px\] {
+    padding-block: 1.5px;
   }
   .pb-12 {
     padding-bottom: calc(var(--spacing) * 12);
@@ -581,9 +576,9 @@
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
-  .text-lg {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
+  .text-base\/6\.5 {
+    font-size: var(--text-base);
+    line-height: calc(var(--spacing) * 6.5);
   }
   .text-lg\/7\.5 {
     font-size: var(--text-lg);
@@ -597,12 +592,12 @@
     font-size: var(--text-xs);
     line-height: calc(var(--spacing) * 3);
   }
+  .text-xs\/4 {
+    font-size: var(--text-xs);
+    line-height: calc(var(--spacing) * 4);
+  }
   .text-\[10px\] {
     font-size: 10px;
-  }
-  .leading-3 {
-    --tw-leading: calc(var(--spacing) * 3);
-    line-height: calc(var(--spacing) * 3);
   }
   .leading-3\.75 {
     --tw-leading: calc(var(--spacing) * 3.75);
@@ -611,10 +606,6 @@
   .leading-4 {
     --tw-leading: calc(var(--spacing) * 4);
     line-height: calc(var(--spacing) * 4);
-  }
-  .leading-6 {
-    --tw-leading: calc(var(--spacing) * 6);
-    line-height: calc(var(--spacing) * 6);
   }
   .leading-6\.5 {
     --tw-leading: calc(var(--spacing) * 6.5);
@@ -635,6 +626,9 @@
   .text-\[\#1D4ED8\] {
     color: #1D4ED8;
   }
+  .text-bold {
+    color: var(--color-bold);
+  }
   .text-inverted {
     color: var(--color-inverted);
   }
@@ -647,8 +641,8 @@
   .text-third {
     color: var(--color-third);
   }
-  .underline {
-    text-decoration-line: underline;
+  .italic {
+    font-style: italic;
   }
   .apply-shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -662,13 +656,6 @@
         box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
       }
     }
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .filter {
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition-all {
     transition-property: all;
@@ -722,6 +709,9 @@
     }
     .md\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .md\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
     .md\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -794,6 +784,12 @@
   h4 {
     font-size: 1.25rem;
     line-height: 1.75rem;
+    font-weight: 700;
+    color: #131B2E;
+  }
+  h5 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     font-weight: 700;
     color: #131B2E;
   }
@@ -1025,11 +1021,6 @@
   inherits: false;
   initial-value: 100%;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1083,7 +1074,6 @@
       --tw-gradient-to-position: 100%;
       --tw-text-shadow-color: initial;
       --tw-text-shadow-alpha: 100%;
-      --tw-outline-style: solid;
     }
   }
 }
