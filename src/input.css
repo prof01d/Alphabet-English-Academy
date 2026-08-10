@@ -117,12 +117,13 @@
 @utility links-learnmore{
     @apply  text-primary text-base/6 font-bold mt-8;
 }
-@utility grid-card{
-    @apply rounded-2xl border border-[#C5C5D3] px-8 pt-8 pb-9 col items-start justify-between gap-4;
-}
 @utility git-gap{
     @apply gap-x-6 gap-y-8.5;
 }
 @utility grid-card{
-    @apply rounded-2xl border border-[#C5C5D3] bg-[#F2F3FF] p-8 col items-start justify-between gap-2;
+    @apply rounded-2xl border border-[#C5C5D3] bg-[#F2F3FF] p-8 col items-start justify-between;
 }
+@utility pricing-card{
+    @apply bg-white border border-[#C5C5D3] rounded-2xl col p-12 pb-25 gap-2 items-start justify-center;  
+}
+
