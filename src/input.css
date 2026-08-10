@@ -126,4 +126,6 @@
 @utility pricing-card{
     @apply bg-white border border-[#C5C5D3] rounded-2xl col p-12 pb-25 gap-2 items-start justify-center;  
 }
-
+@utility dark-button{
+    @apply  bg-quarter rounded-xl hover:brightness-130 transition-all text-[#2A1700] font-bold  ;
+}
