@@ -78,7 +78,7 @@
     @apply text-primary font-bold text-xl/8 lg:text-2xl/10 text-shadow-sm hover:text-shadow-md;
 }
 @utility nav-link{
-    @apply font-medium text-sm text-inverted leading-5 hover:text-primary hover:font-bold transition-all ; 
+    @apply font-medium text-sm text-inverted leading-5 hover:text-primary hover:font-bold transition-all; 
 }
 @utility head-button{
     @apply font-bold text-sm text-inverted leading-5 px-6 py-2 rounded-lg;
