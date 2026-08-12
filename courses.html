@@ -65,7 +65,8 @@
                         <a href="reg.html" class="hero-button bg-third text-white apply-shadow  hover:translate-1">
                             Explore All Tracks
                         </a>
-                        <button class="hero-button row gap-2 text-primary border border-border apply-shadow hover:text-background">
+                        <button
+                            class="hero-button row gap-2 text-primary border border-border apply-shadow hover:text-background">
                             <img src="./Assets/imgs/courses-page/play.svg" class="" alt="Watch Intro">Watch Intro
                         </button>
                     </div>
@@ -76,7 +77,205 @@
             </div>
         </div>
     </section>
+    <section class="courses py-12 bg-background">
+        <div class="container">
+            <div class="toolbar bg-[#FAF8FF] rounded-2xl border border-border p-4 col items-start gap-6 lg:row lg:gap-0 justify-between">
+                <div class="row gap-4 w-full overflow-x-auto">
+                    <div class="col items-start">
+                        <span class="text-xs/4 font-semibold text-inverted ml-1 mb-1">
+                            LEVEL
+                        </span>
+                        <select name="level" id="level"
+                            class="px-4 py-2 rounded-lg border border-border focus:ring-secondary focus:border-secondary">
+                            <option value="cefr">All CEFR Levels</option>
+                            <option value="a1">A1- Biggners</option>
+                            <option value="b2">B2- Upper Intermediate</option>
+                            <option value="c2">C2- Proficient</option>
+                        </select>
+                    </div>
+                    <div class="col items-start">
+                        <span class="text-xs/4 font-semibold text-inverted ml-1 mb-1">
+                            FORMAT
+                        </span>
+                        <select name="Any Format" id="format"
+                            class="px-4 py-2 rounded-lg border border-border focus:ring-secondary focus:border-secondary">
+                            <option value="format">Any Format</option>
+                            <option value="1-1">1-on-1 Menotoring</option>
+                            <option value="Groube">Groube Cohorts</option>
+                            <option value="Self">Self-Paced Labs</option>
+                        </select>
+                    </div>
+                    <div class="col items-start">
+                        <span class="text-xs/4 font-semibold text-inverted ml-1 mb-1">
+                            GOAL
+                        </span>
+                        <select name="Goal" id="goal"
+                            class="px-4 py-2 rounded-lg border border-border focus:ring-secondary focus:border-secondary">
+                            <option value="gol">All Goals</option>
+                            <option value="business">Business English</option>
+                            <option value="ielts">Exam Prep (IELTS)</option>
+                            <option value="Daily">Daily Fluency</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="text-bold text-base/6.5 font-medium">
+                    Showing 12 Courses
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-8 gap-6">
+                <div class="bg-[#FAF8FF] rounded-2xl border border-border overflow-hidden hover:shadow-md transition-all hover:-translate-y-1">
+                    <div class="relative h-48">
+                        <img src="./Assets/imgs/courses-page/courses/business.webp"
+                            class="w-full h-full" alt="Business Meeting">
+                        <div class="absolute bg-white/90 rounded-lg px-2 py-1 top-4 left-4 row gap-1">
+                            <img src="./Assets/imgs/courses-page/courses/week.svg" alt="Time">
+                            <span class="text-xs/4 font-bold text-primary">12 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="w-full col gap-2 items-start p-9">
+                        <div class="w-full row justify-between items-start">
+                            <h3>
+                                Business Communications Mastery
+                            </h3>
+                            <span class="bg-secondary py-1 pl-[14.42px] pr-2 rounded-sm">
+                                B2-<br>
+                                C1
+                            </span>
+                        </div>
+                        <p>
+                            Master negotiation, high-stakes
+                            presentations, and professional email…
+                        </p>
+                        <div class="w-full mt-4">
+                            <div class="w-full row justify-between text-inverted text-xs/4 font-semibold">
+                                <span>Core Competency Progress</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="relative w-full h-2 bg-background rounded-full mt-1">
+                                <div class="absolute inset-y-0left-0 w-[85%] h-full bg-quarter rounded-full">
+                                </div>
+                            </div>
 
+                        </div>
+                        <div class="row gap-4">
+                            <div class="row gap-1">
+                                <span><img src="./Assets/imgs/courses-page/courses/group.svg" alt="Group Icone"></span>
+                                <span class="text-xs/4 font-semibold">Group</span>
+                            </div>
+                            <div class="row gap-1">
+                                <span><img src="./Assets/imgs/courses-page/courses/live.svg" alt=""></span>
+                                <span class="text-xs/4 font-semibold">Live Sessions</span>
+                            </div>
+                        </div>
+                        <div class="w-full row gap-4 mt-4 text-base/6 font-bold">
+                            <button class="w-1/2 text-bold border border-[#757682] rounded-xl py-2 hover:bg-background transition-colors">Details</button>
+                            <button class="w-1/2 text-white bg-primary rounded-xl py-2.25 hover:bg-primary/80 transition-colors">Enroll</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#FAF8FF] rounded-2xl border border-border overflow-hidden hover:shadow-md transition-all hover:-translate-y-1">
+                    <div class="relative h-48">
+                        <img src="./Assets/imgs/courses-page/courses/ielts.webp"
+                            class="w-full h-full object-cover" alt="Business Meeting">
+                        <div class="absolute bg-white/90 rounded-lg px-2 py-1 top-4 left-4 row gap-1">
+                            <img src="./Assets/imgs/courses-page/courses/power.svg" alt="Time">
+                            <span class="text-xs/4 font-bold text-primary">Self-Paced</span>
+                        </div>
+                    </div>
+                    <div class="w-full col gap-2 items-start p-9">
+                        <div class="w-full row justify-between items-start">
+                            <h3>
+                                IELTS Academic Accelerator
+                            </h3>
+                            <span class="bg-secondary py-1 pl-[14.42px] pr-2 rounded-sm">
+                                B1-<br>
+                                B1
+                            </span>
+                        </div>
+                        <p>
+                            Intensive preparation for all four IELTS
+                            modules with focus on score-maximizing
+                        </p>
+                        <div class="w-full mt-4">
+                            <div class="w-full row justify-between text-inverted text-xs/4 font-semibold">
+                                <span>Target Score Confidence</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="relative w-full h-2 bg-background rounded-full mt-1">
+                                <div class="absolute inset-y-0 left-0 w-6/10 h-full bg-quarter rounded-full">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row gap-4">
+                            <div class="row gap-1">
+                                <span><img src="./Assets/imgs/courses-page/courses/test.svg" alt="Group Icone"></span>
+                                <span class="text-xs/4 font-semibold">40+ Tests</span>
+                            </div>
+                            <div class="row gap-1">
+                                <span><img src="./Assets/imgs/courses-page/courses/feedback.svg" alt=""></span>
+                                <span class="text-xs/4 font-semibold">AI Feedback</span>
+                            </div>
+                        </div>
+                        <div class="w-full row gap-4 mt-4 text-base/6 font-bold">
+                            <button class="w-1/2 text-bold border border-[#757682] rounded-xl py-2 hover:bg-background transition-colors">Details</button>
+                            <button class="w-1/2 text-white bg-primary rounded-xl py-2.25 hover:bg-primary/80 transition-colors">Enroll</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#FAF8FF] rounded-2xl border border-border overflow-hidden shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+                    <div class="relative h-48">
+                        <img src="./Assets/imgs/courses-page/courses/fluency.webp"
+                            class="w-full h-full object-cover" alt="Business Meeting">
+                        <div class="absolute bg-white/90 rounded-lg px-2 py-1 top-4 left-4 row gap-1">
+                            <img src="./Assets/imgs/courses-page/courses/1-1.svg" alt="Time">
+                            <span class="text-xs/4 font-bold text-primary"  >1-on-1</span>
+                        </div>
+                    </div>
+                    <div class="w-full col gap-2 items-start p-9">
+                        <div class="w-full row justify-between items-start">
+                            <h3>
+                                Conversational Fluency Pro
+                            </h3>
+                            <span class="bg-secondary py-1 pl-[14.42px] pr-2 rounded-sm">
+                                A2-<br>
+                                C2
+                            </span>
+                        </div>
+                        <p>
+                            Tailored sessions with native speakers to
+                            bridge the gap between academic…
+                        </p>
+                        <div class="w-full mt-4">
+                            <div class="w-full row justify-between text-inverted text-xs/4 font-semibold">
+                                <span>Personal Growth Track</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="relative w-full h-2 bg-background rounded-full mt-1">
+                                <div class="absolute inset-y-0 left-0 w-[95%] h-full bg-quarter rounded-full">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row gap-4">
+                            <div class="row gap-1">
+                                <span><img src="./Assets/imgs/courses-page/courses/schedule.svg" alt="Group Icone"></span>
+                                <span class="text-xs/4 font-semibold">Flex Schedule</span>
+                            </div>
+                            <div class="row gap-1">
+                                <span><img src="./Assets/imgs/courses-page/courses/native.svg" alt=""></span>
+                                <span class="text-xs/4 font-semibold">Native Tutors</span>
+                            </div>
+                        </div>
+                        <div class="w-full row gap-4 mt-4 text-base/6 font-bold">
+                            <button class="w-1/2 text-bold border border-[#757682] rounded-xl py-2 hover:bg-background transition-colors">Details</button>
+                            <button class="w-1/2 text-white bg-primary rounded-xl py-2.25 hover:bg-primary/80 transition-colors">Enroll</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="bg-background pt-12 pb-8">
         <div class="container">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
@@ -89,13 +288,13 @@
                     </p>
                     <div class="row gap-6 justify-center">
                         <a href="#">
-                            <img src="./Assets/imgs/footer/qr.svg" alt="QR CODE" />
+                            <img src="./Assets/imgs/index-page/footer/qr.svg" alt="QR CODE" />
                         </a>
                         <a href="#">
-                            <img src="./Assets/imgs/footer/x.svg" alt="X" />
+                            <img src="./Assets/imgs/index-page/footer/x.svg" alt="X" />
                         </a>
                         <a href="#">
-                            <img src="./Assets/imgs/footer/arr.svg" alt="Arrow" />
+                            <img src="./Assets/imgs/index-page/footer/arr.svg" alt="Arrow" />
                         </a>
                     </div>
                 </div>
@@ -148,7 +347,7 @@
                         <input type="email" placeholder="Email address"
                             class="w-full bg-white border border-border pt-3.5 pb-3.75 px-4 rounded-lg" />
                         <button>
-                            <img src="./Assets/imgs/footer/send.svg" alt="Send"
+                            <img src="./Assets/imgs/index-page/footer/send.svg" alt="Send"
                                 class="bg-primary py-3.5 px-3.5 rounded-lg">
                         </button>
                     </div>

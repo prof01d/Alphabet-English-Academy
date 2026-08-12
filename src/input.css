@@ -16,7 +16,6 @@
     --color-border:#C5C5D3;
     --breakpoint-xs:440px;
 }
-
 @layer base{
     body{
         font-family: var(--font-primary)
@@ -69,7 +68,6 @@
         font-weight: 400;
         color:#444651;
     }
-
 }
 @utility apply-shadow{
     @apply shadow-sm hover:shadow-md transition-all;
