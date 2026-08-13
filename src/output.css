@@ -18,6 +18,7 @@
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-normal: 400;
@@ -850,11 +851,17 @@
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
   .py-32 {
     padding-block: calc(var(--spacing) * 32);
+  }
+  .py-40 {
+    padding-block: calc(var(--spacing) * 40);
   }
   .py-\[1\.5px\] {
     padding-block: 1.5px;
@@ -1016,6 +1023,18 @@
     font-size: var(--text-sm);
     line-height: 22.75px;
   }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xl\/\[28\] {
+    font-size: var(--text-xl);
+    line-height: 28;
+  }
+  .text-xl\/\[28px\] {
+    font-size: var(--text-xl);
+    line-height: 28px;
+  }
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
@@ -1030,6 +1049,9 @@
   }
   .text-\[10px\] {
     font-size: 10px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
   }
   .leading-3 {
     --tw-leading: calc(var(--spacing) * 3);
@@ -1072,6 +1094,12 @@
   }
   .text-\[\#2A1700\] {
     color: #2A1700;
+  }
+  .text-\[\#90A8FF\] {
+    color: #90A8FF;
+  }
+  .text-\[\#684000\] {
+    color: #684000;
   }
   .text-\[\#FFFFFFB2\] {
     color: #FFFFFFB2;
@@ -1218,6 +1246,14 @@
     .hover\:shadow-md:hover {
       --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+    .hover\:brightness-110:hover {
+      --tw-brightness: brightness(110%);
+      filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+    }
+    .hover\:brightness-130:hover {
+      --tw-brightness: brightness(130%);
+      filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
     }
   }
   .focus\:border-secondary:focus {
