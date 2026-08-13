@@ -18,7 +18,8 @@
 }
 @layer base{
     body{
-        font-family: var(--font-primary)
+        font-family: var(--font-primary);
+        @apply selection:bg-secondary;
     }
     .container{
         @apply mx-auto;
