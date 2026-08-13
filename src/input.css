@@ -33,7 +33,7 @@
         line-height: 2.25rem;
         font-weight: 700;
         color: #00236F;
-        @variant md{
+        @variant lg{
             font-size: 3rem;
             line-height: 3.75rem;
             font-weight: 700;
