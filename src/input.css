@@ -142,3 +142,9 @@
 @utility foter-span{
     @apply border-2 border-inverted opacity-40 px-1;
 }
+@utility grid-trust{
+    @apply col items-center text-center p-8 pb-12 bg-white rounded-xl;
+}
+@utility grid-teaching{
+    @apply rounded-2xl border border-border p-8 items-start  text-start col gap-4;
+}
