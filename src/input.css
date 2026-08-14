@@ -146,5 +146,5 @@
     @apply col items-center text-center p-8 pb-12 bg-white rounded-xl;
 }
 @utility grid-teaching{
-    @apply rounded-2xl border border-border p-8 items-start  text-start col gap-4;
+    @apply rounded-2xl border border-border p-8 items-start text-start col gap-4;
 }
