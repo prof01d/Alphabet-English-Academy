@@ -9,8 +9,8 @@
 
 </head>
 
-<body>
-    <header class="hrader sticky">
+<body class="bg-[#FAF8FF]">
+    <header class="hrader sticky border-b border-border shadow-sm">
         <div class="container flex justify-between text-center items-center py-3.5">
             <div class="row gap-12 justify-between">
                 <div class="logo">
@@ -46,7 +46,7 @@
             <div class="md:w-1/2 overflow-hidden md:relative">
                 <img src="./Assets/imgs/blog-page/heroimg.webp" alt="Girl Study" class="md:absolute md:inset-0 w-full h-full object-cover">
             </div>
-            <div class="py-8 md:p-12 md:w-1/2">
+            <div class="py-8 max-md:px-4 md:p-12 md:w-1/2 bg-white">
                 <div class="row gap-2 pb-4">
                     <span class="bg-[#FFDDB8] rounded-full py-1 px-3 text=[#2A1700] text-xs/4 font-semibold">BUSINESS ENGLISH</span>
                     <div class="row gap-1">
@@ -62,6 +62,130 @@
                     <div class="col items-start">
                         <span class="text-bold text-sm/5 font-medium">Dr. James Thornton</span>
                         <span class="text-inverted text-xs/4 font-semibold">Senior Instructor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Articals py-12">
+        <div class="container col lg:items-start lg:row gap-12">
+            <div class="w-full">
+                <h2 class="text-2xl/8 font-semibold mb-2">Latest Articles</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-border py-8 gap-6">
+                    <div class="bg-white rounded-2xl border border-border overflow-hidden hover:shadow-md transition-all hover:-translate-y-1">
+                        <div class="relative h-48">
+                          <img src="./Assets/imgs/blog-page/Perfecting.webp" class="w-full h-full"
+                                alt="Business Meeting">
+                            <div class="absolute bg-background/90 rounded-lg px-2 py-1 top-4 left-4 row gap-1">
+                                <span class="text-xs/4 font-semibold text-[#00174B]">EXAM PREP</span>
+                            </div>
+                        </div>
+                        <div class="w-full col gap-2 items-start p-6">
+                            <div class="w-full items-start">
+                                <h3 class="pb-2">
+                                    Perfecting Your IELTS Speaking Score
+                                </h3>
+                                <p class="mb-6">
+                                    Discover the key strategies
+                                    and common pitfalls to avoid when aiming for a band 8.0+
+                                </p>
+                            </div>
+                            <div class="w-full row gap-2 text-inverted text-sm/5 font-semibold border-t border-border pt-6">
+                                <img src="./Assets/imgs/blog-page/Sarah.svg" alt="Sarah Jenkins">
+                                <span>Sarah Jenkins</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl border border-border overflow-hidden hover:shadow-md transition-all hover:-translate-y-1">
+                        <div class="relative h-48">
+                          <img src="./Assets/imgs/blog-page/History.webp" class="w-full h-full"
+                                alt="Business Meeting">
+                            <div class="absolute bg-[#1E3A8A]/90 rounded-lg px-2 py-1 top-4 left-4 row gap-1">
+                                <span class="text-xs/4 font-semibold text-[#90A8FF]">GRAMMAR TIPS</span>
+                            </div>
+                        </div>
+                        <div class="w-full col gap-2 items-start p-6">
+                            <div class="w-full items-start">
+                                <h3 class="pb-2">
+                                    The History of English Vowels
+                                </h3>
+                                <p class="mb-6">
+                                    A deep dive into the Great
+                                    Vowel Shift and why English
+                                    spelling often seems so…
+                                </p>
+                            </div>
+                            <div class="w-full row gap-2 text-inverted text-sm/5 font-semibold border-t border-border pt-6">
+                                <img src="./Assets/imgs/blog-page/alan.svg" alt="Prof. Alan Wright">
+                                <span>Prof. Alan Wright</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl border border-border overflow-hidden hover:shadow-md transition-all hover:-translate-y-1">
+                        <div class="relative h-48">
+                          <img src="./Assets/imgs/blog-page/Perfecting.webp" class="w-full h-full"
+                                alt="Business Meeting">
+                            <div class="absolute bg-background/90 rounded-lg px-2 py-1 top-4 left-4 row gap-1">
+                                <span class="text-xs/4 font-semibold text-[#00174B]">RESOURCES</span>
+                            </div>
+                        </div>
+                        <div class="w-full col gap-2 items-start p-6">
+                            <div class="w-full items-start">
+                                <h3 class="pb-2">
+                                    Mastering Phrasal Verbs in Context
+                                </h3>
+                                <p class="mb-6">
+                                    Stop memorizing lists. Learn
+                                    how to naturally acquire and
+                                    use phrasal verbs by…
+                                </p>
+                            </div>
+                            <div class="w-full row gap-2 text-inverted text-sm/5 font-semibold border-t border-border pt-6">
+                                <img src="./Assets/imgs/blog-page/David.svg" alt="David Chen">
+                                <span>David Chen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col gap-8 max-lg:w-full w-fit">
+                <div class="bg-primary rounded-xl p-6 col gap-2 w-full items-start">
+                    <h3 class="text-white text-start">Join our Newsletter</h3>
+                    <p class="text-white text-start opacity-90">
+                        Get weekly grammar tips and
+                        academy news delivered to your inbox.
+                    </p>
+                    <div class="w-full items-center">
+                        <input type="text" placeholder="Email address" class="w-full bg-white py-2.75 px-3 rounded-lg text-base leading-[100%] font-normal my-4" />
+                        <button class="bg-secondary w-full py-2.75 px-3 rounded-lg text-third text-sm/5 font-bold hover:scale-105 transition-all">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col w-full p-6 border border-border rounded-xl gap-4 bg-white">
+                    <div class="row gap-2 justify-start w-full border-b border-background p-2">
+                        <img src="./Assets/imgs/blog-page/popular.svg" alt="">
+                        <h3>Popular</h3>
+                    </div>
+                    <div class="col w-full items-start">
+                        <ul class="col items-start gap-3">
+                            <li class="row items-start"><span class="text-background text-xl/7 font-semibold mr-4">01</span><span class="text-sm/5 font-medium text-inverted">The Ultimate Guide to Modal Verbs</span></li>
+                            <li class="row items-start"><span class="text-background text-xl/7 font-semibold mr-4">02</span><span class="text-sm/5 font-medium text-inverted">Writing Professional Emails: A Template</span></li>
+                            <li class="row items-start"><span class="text-background text-xl/7 font-semibold mr-4">03</span><span class="text-sm/5 font-medium text-inverted">Common Pronunciation Mistakes to Avoid</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col w-full p-6 border border-border rounded-xl gap-4 bg-white">
+                    <div class="row gap-2 justify-start w-full border-b border-background p-2">
+                        <img src="./Assets/imgs/blog-page/categories.svg" alt="">
+                        <h3>Categories</h3>
+                    </div>
+                    <div class="col w-full items-start">
+                        <ul class="row flex-wrap items-start gap-3">
+                            <a href="#" class="border border-border/50 rounded-full py-1 px-3 bg-[#F2F3FF] text-inverted text-xs/4 font-semibold">Grammar Tips</a>
+                            <a href="#" class="border border-border/50 rounded-full py-1 px-3 bg-[#F2F3FF] text-inverted text-xs/4 font-semibold">Business English</a>
+                            <a href="#" class="border border-border/50 rounded-full py-1 px-3 bg-[#F2F3FF] text-inverted text-xs/4 font-semibold">Exam Prep</a>
+                            <a href="#" class="border border-border/50 rounded-full py-1 px-3 bg-[#F2F3FF] text-inverted text-xs/4 font-semibold">Resources</a>
+                            <a href="#" class="border border-border/50 rounded-full py-1 px-3 bg-[#F2F3FF] text-inverted text-xs/4 font-semibold">Student Success</a>
+                        </ul>
                     </div>
                 </div>
             </div>
