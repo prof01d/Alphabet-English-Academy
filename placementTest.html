@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses</title>
     <link href="./src/output.css" rel="stylesheet" />
-
 </head>
-
 <body>
     <header class="hrader sticky">
         <div class="container flex justify-between text-center items-center py-3.5">
@@ -32,9 +29,6 @@
                 <img src="./Assets/imgs/index-page/header/menu.svg" alt="Menu" />
             </div>
             <div class="hidden md:row  gap-6">
-                <a href="./placement.html" class="head-button text-primary hover:bg-background transition-all">
-                    Placement Test
-                </a>
                 <a href="./reg.html" class="head-button bg-primary text-white apply-shadow">
                     Free Trial
                 </a>
@@ -62,7 +56,7 @@
                 </div>
             </div>
             <div class="col md:row gap-6">
-                <div class="col p-8 rounded-xl border border-border text-center ">
+                <div class="col p-8 rounded-xl border border-border text-center w-1/2">
                     <div class="bg-primary rounded-full p-5 mb-4">
                         <img src="./Assets/imgs/placementTest-page/test.svg" alt="">
                     </div>
@@ -70,7 +64,7 @@
                     <p class="mb-8">Determine your CEFR level from A1 to C2 with our scientific diagnostic designed by Cambridge experts.</p>
                     <button class="row bg-primary py-4 rounded-xl w-full justify-center gap-2 text-white">Start Test <span><img src="./Assets/imgs/placementTest-page/arrow.svg" alt=""></span></button>
                 </div>
-                <div class="col p-8 rounded-xl border border-border text-center">
+                <div class="col p-8 rounded-xl border border-border text-center w-1/2">
                     <div class="bg-secondary rounded-full p-5 mb-4">
                         <img src="./Assets/imgs/placementTest-page/trial.svg" alt="">
                     </div>
@@ -82,7 +76,100 @@
             
         </div>
     </section>
-    
+    <section class="Flow-Preview py-12 bg-background">
+        <div class="container">
+            <div class="col max-lg:gap-12 lg:row w-full">
+                <div class="col w-full lg:w-[58%] p-8 gap-8 bg-white rounded-xl items-start relative group">
+                    <div class="w-full row justify-between text-inverted text-xs/4 font-semibold">
+                        <span>Step 1 of 5: Grammar Basics</span>
+                        <div class="relative w-[70%] h-2 bg-background rounded-full mt-1">
+                            <div class="absolute inset-y-0 left-0 w-[20%] h-full bg-quarter rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="col w-full items-start gap-4">
+                        <h4 class="text-primary">Which sentence is grammatically correct?</h4>
+                        <label class="w-full cursor-pointer has-checked:border-primary has-checked:bg-primary/20 has-checked:scale-103 row justify-between border border-border rounded-lg p-4 hover:border-primary hover:bg-primary/20 transition-all hover:scale-103">
+                            <input type="radio" name="ptQ" class="peer hidden" />
+                            <span class="text-base/6 font-normal text-bold peer-checked:font-semibold peer-checked:text-primary">"She have been studying English for three years."</span>
+                            <img src="./Assets/imgs/placementTest-page/check2.svg" alt="Checked"
+                                 class="opacity-0 peer-checked:opacity-100 transition-opacity" />
+                        </label>
+                        <label class="w-full cursor-pointer has-checked:border-primary has-checked:bg-primary/20 has-checked:scale-103 row justify-between border border-border rounded-lg p-4 hover:border-primary hover:bg-primary/20 transition-all hover:scale-103">
+                            <input type="radio" name="ptQ" class="peer hidden" />
+                            <span class="text-base/6 font-normal text-bold peer-checked:font-semibold peer-checked:text-primary">"She has been studying English for three years."</span>
+                            <img src="./Assets/imgs/placementTest-page/check2.svg" alt="Checked"
+                                 class="opacity-0 peer-checked:opacity-100 transition-opacity" />
+                        </label>
+                        <label class="w-full cursor-pointer has-checked:border-primary has-checked:bg-primary/20 has-checked:scale-103 row justify-between border border-border rounded-lg p-4 hover:border-primary hover:bg-primary/20 transition-all hover:scale-103">
+                            <input type="radio" name="ptQ" class="peer hidden" />
+                            <span class="text-base/6 font-normal text-bold peer-checked:font-semibold peer-checked:text-primary">"She studies English since three years."</span>
+                            <img src="./Assets/imgs/placementTest-page/check2.svg" alt="Checked"
+                                 class="opacity-0 peer-checked:opacity-100 transition-opacity" />
+                        </label>
+                    </div>
+                    <div class="w-full flex justify-end">
+                        <button class="py-2 px-6 bg-primary rounded-xl text-white text-base/6 font-normal">
+                            Next Question
+                        </button>
+                    </div>
+                    <div class="absolute col gap-2 right-8 bottom-8 border border-white/50 bg-white/70 shadow-2xl rounded-xl animate-bounce group-hover:hidden p-4">
+                        <div class="row gap-4">
+                            <img src="Assets/imgs/placementTest-page/level.svg" alt="level" class="bg-secondary rounded-lg p-1 pt-1.25" />
+                            <span class="text-primary text-base/6 font-normal">Your Predicted Level</span>
+                        </div>
+                        <div class="col gap-px py-2">
+                            <span class="text-primary text-[32px]/10 font-bold">B1</span>
+                            <span class="text-inverted text-base/4 font-semibold mb-2">INTERMEDIATE</span>
+                        </div>
+                        <div class="relative w-full flex h-2 bg-linear-to-l from-primary via-secondary to-[#FFDAD6] rounded-full">
+                            <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-primary rounded-full"></div>
+                        </div>
+                        <div class="row justify-between w-full">                     
+                            <span class="text-[10px]/[15px] font-normal">A1</span>
+                            <span class="text-[10px]/[15px] font-normal">A2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-[42%] col gap-6 px-12">
+                    <h2>Science-backed diagnosis in half the time.</h2>
+                    <p class="text-[18px]/[30px] hover:drop-shadow-lg">Our adaptive testing engine adjusts difficulty in real-time based on your answers, ensuring you get an accurate 
+                        CEFR classification without the fatigue of a long exam.
+                    </p>
+                    <ul class="w-full col items-start gap-4 pt-2">
+                        <li class="row gap-4"><img src="./Assets/imgs/placementTest-page/validates.svg" alt="" /> <span class="text-base/6 font-normal text-bold">Validates Grammar, Vocabulary, and Syntax.</span></li>
+                        <li class="row gap-4"><img src="./Assets/imgs/placementTest-page/speed.svg" alt="" /> <span class="text-base/6 font-normal text-bold">Smart adaptive logic saves 20 minutes of testing time.</span></li>
+                        <li class="row gap-4"><img src="./Assets/imgs/placementTest-page/idea.svg" alt="" /> <span class="text-base/6 font-normal text-bold">Receive a detailed PDF report with strengths and gaps.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="result-form py-12">
+        <div class="container col">
+            <div class="col gap-8 bg-background rounded-xl p-8">
+                <div>
+                    <h2>Get your results & book your trial</h2>
+                    <p>Provide your details to receive the full diagnostic report and schedule your free session.</p>
+                </div>
+                <form class="w-full col gap-6">
+                    <div class="row gap-6 justify-between w-full">
+                        <div class="col items-start gap-2 w-full">
+                            <label for="fName">Full Name</label>
+                            <input type="text" id="fName" placeholder="e.g. Jane Doe" class="w-full border border-border bg-white py-2.5 px-4 rounded-lg" />
+                        </div>
+                        <div class="col items-start gap-2 w-full">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="jane@example.com" class="w-full border border-border bg-white py-2.5 px-4 rounded-lg" />
+                        </div>
+                    </div> 
+                    <button class="w-full py-4 rounded-2xl bg-quarter text-white font-semibold text-xl/7">
+                        Get Results & Book Now
+                    </button>
+                    <div class="text-xs/4 font-semibold text-inverted">By continuing, you agree to our <span class="underline"><a href="#">Terms of Service</a></span> and <span class="underline"><a href="#">Privacy Policy</a></span>.</div>
+                </form>
+            </div>
+        </div>
+    </section>
     <footer class="bg-background pt-12 pb-8">
         <div class="container">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
@@ -139,7 +226,7 @@
                             Privacy Policy
                         </li>
                         <li>
-                            Terms of Service]
+                            Terms of Service
                         </li>
                     </ul>
                 </div>
@@ -179,5 +266,4 @@
         </div>
     </footer>
 </body>
-
 </html>
