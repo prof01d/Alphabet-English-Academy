@@ -404,6 +404,9 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: calc(var(--spacing) * 8);
+    @media (width < 48rem) {
+      align-items: center;
+    }
   }
   .grid-card {
     display: flex;
@@ -1721,6 +1724,12 @@
   @media (width < 48rem) {
     .max-md\:w-full {
       width: 100%;
+    }
+    .max-md\:items-center {
+      align-items: center;
+    }
+    .max-md\:justify-center {
+      justify-content: center;
     }
     .max-md\:gap-8 {
       gap: calc(var(--spacing) * 8);
