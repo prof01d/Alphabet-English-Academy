@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses</title>
+    <title>Pricing</title>
     <link href="./src/output.css" rel="stylesheet" />
 
 </head>
@@ -23,7 +23,9 @@
                         <li><a href="./courses.html" class="nav-link">Courses</a></li>
                         <li><a href="./tutors.html" class="nav-link">Tutors</a></li>
                         <li><a href="./about.html" class="nav-link">About</a></li>
-                        <li><a href="./pricing.html" class="nav-link text-primary font-bold border-b-2 border-secondary py-1">Pricing</a></li>
+                        <li><a href="./pricing.html"
+                                class="nav-link text-primary font-bold border-b-2 border-secondary py-1">Pricing</a>
+                        </li>
                         <li><a href="./blog.html" class="nav-link">Blog</a></li>
                     </ul>
                 </nav>
@@ -42,16 +44,137 @@
         </div>
     </header>
     <section class="hero">
-        <div class="container col text-center">
+        <div class="container col gap-4 p-8 text-center">
             <h1>Simple, Transparent Pricing</h1>
             <p>Choose the plan that fits your pace and budget.</p>
-            <ul class="row gap-4 pt-4">
-                <li>Monthly</li>
-                <li></li>
-                <li>Annual</li>
-                <li><span>SAVE 20%</span></li>
-            </ul>
+            <div class="row gap-4 pt-4">
+                    <label class="row gap-4 items-center">
+                        <input type="checkbox" class="sr-only peer" />
+                        <span class="text-sm/5 font-bold text-primary peer-checked:text-inverted peer-checked:font-medium">
+                            Monthly
+                        </span>
+                        <div class="relative row w-14 h-8 rounded-full p-1 bg-background cursor-pointer peer-checked:border peer-checked:border-secondary transition-colors duration-150 peer-checked:[&_.ball]:translate-x-6">
+                            <div class="ball absolute left-1 w-6 h-6 rounded-full bg-primary transition-transform duration-150">
+                            </div>
+                        </div>
+                        <span
+                            class="text-sm/5 font-medium text-inverted peer-checked:font-bold peer-checked:text-primary">
+                            Annual
+                        </span>
+                    </label>
+                <span class="bg-secondary pt-1 px-4 rounded-full text-xs/4 text-third font-bold">SAVE 20%</span>
+            </div>    
+
+            <div class="row gap-4 mt-12 w-full">
+                <div
+                    class="items-left border border-border text-primary shadow-xl shadow-[#0000001A] bg-white rounded-2xl gap-2 col p-8 w-full hover:-translate-y-6 transition-transform duration-250">
+                    <div class="col gap-2 w-full items-start">
+                        <h3 class="items-start">
+                            Self-Paced
+                        </h3>
+                        <div class="row gap-1 items-baseline">
+                            <span class="text-5xl/14 font-bold">$29</span>
+                            <span class="text-xs/4 font-semibold">/mo</span>
+                        </div>
+                        <ul class="col items-start gap-6 pb-10 pt-4 text-inverted">
+                            <li class="row gap-4 items-center font-semibold">
+                                <img src="./Assets/imgs/pricing-page/hero/plus.svg" alt="plus">
+                                Full curriculum access
+                            </li>
+                            <li class="row gap-4 items-center">
+                                <img src="./Assets/imgs/pricing-page/hero/check.svg" alt="Checkbox">
+                                Mobile app
+                            </li>
+                            <li class="row gap-4 items-center">
+                                <img src="./Assets/imgs/pricing-page/hero/check.svg" alt="Checkbox">
+                                AI feedback
+                            </li>
+                            <li class="row gap-4 items-center">
+                                <img src="./Assets/imgs/pricing-page/hero/check.svg" alt="Checkbox">
+                                Progress tracking
+                            </li>
+                        </ul>
+                    </div>
+                    <button
+                        class="w-full py-4 bg-primary rounded-xl text-white text-base/6 font-bold hover:bg-primary/90 transition-all">
+                        Start Free Trial
+                    </button>
+                </div>
+                <div
+                    class="items-left border-2 border-primary text-primary relative shadow-xl shadow-[#0000001A] bg-white rounded-2xl gap-2 col p-8 scale-105 w-full hover:scale-99 transition-all duration-250">
+                    <div
+                        class="absolute rounded-tr-xl rounded-bl-xl bg-primary text-white px-8 py-1 top-0 right-0 text-xs/4 font-semibold">
+                        MOST POPULAR
+                    </div>
+                    <div class="col gap-2 w-full items-start">
+                        <h3 class="items-start">
+                            Standard
+                        </h3>
+                        <div class="row gap-1 items-baseline">
+                            <span class="text-5xl/14 font-bold">$59</span>
+                            <span class="text-xs/4 font-semibold">/mo</span>
+                        </div>
+                        <ul class="col items-start gap-6 pb-10 pt-4 text-inverted">
+                            <li class="row gap-4 items-center font-semibold">
+                                <img src="./Assets/imgs/pricing-page/hero/plus.svg" alt="plus">
+                                Everything in Self-Paced
+                            </li>
+                            <li class="row gap-4 items-center">
+                                <img src="./Assets/imgs/pricing-page/hero/check.svg" alt="Checkbox">
+                                4 Group Classes/mo
+                            </li>
+                            <li class="row gap-4 items-center">
+                                <img src="./Assets/imgs/pricing-page/hero/check.svg" alt="Checkbox">
+                                Expert feedback
+                            </li>
+                            <li class="row gap-4 items-center">
+                                <img src="./Assets/imgs/pricing-page/hero/check.svg" alt="Checkbox">
+                                Certificate of completion
+                            </li>
+                        </ul>
+                    </div>
+                    <button
+                        class="w-full py-4 bg-primary rounded-xl text-white text-base/6 font-bold hover:bg-primary/90 transition-all">
+                        Start Free Trial
+                    </button>
+                </div>
+                <div
+                    class="items-left border border-border text-primary shadow-xl shadow-[#0000001A] bg-white rounded-2xl gap-2 col p-8 w-full hover:-translate-y-6 transition-transform duration-250">
+                    <div class="col gap-2 w-full items-start">
+                        <h3 class="items-start">
+                            Premium
+                        </h3>
+                        <div class="row gap-1 items-baseline">
+                            <span class="text-5xl/14 font-bold">$149</span>
+                            <span class="text-xs/4 font-semibold">/mo</span>
+                        </div>
+                        <ul class="col items-start gap-6 pb-10 pt-4 text-inverted">
+                            <li class="row gap-4 items-center font-semibold">
+                                <img src="./Assets/imgs/pricing-page/hero/plus.svg" alt="plus">
+                                Everything in Standard
+                            </li>
+                            <li class="row gap-4 items-center">
+                                <img src="./Assets/imgs/pricing-page/hero/check.svg" alt="Checkbox">
+                                2 Private 1-on-1 Sessions/mo
+                            </li>
+                            <li class="row gap-4 items-center">
+                                <img src="./Assets/imgs/pricing-page/hero/check.svg" alt="Checkbox">
+                                Personalized study plan
+                            </li>
+                            <li class="row gap-4 items-center">
+                                <img src="./Assets/imgs/pricing-page/hero/check.svg" alt="Checkbox">
+                                Priority support
+                            </li>
+                        </ul>
+                    </div>
+                    <button
+                        class="w-full py-4 bg-primary rounded-xl text-white text-base/6 font-bold hover:bg-primary/90 transition-all">
+                        Start Free Trial
+                    </button>
+                </div>
+            </div>
         </div>
+
     </section>
     <footer class="bg-background pt-12 pb-8">
         <div class="container">
