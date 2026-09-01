@@ -293,6 +293,9 @@
       max-width: 96rem;
     }
   }
+  .m-auto {
+    margin: auto;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -575,6 +578,9 @@
   .w-full {
     width: 100%;
   }
+  .table-auto {
+    table-layout: auto;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -722,12 +728,25 @@
   .gap-y-12 {
     row-gap: calc(var(--spacing) * 12);
   }
+  :where(.divide-x > :not(:last-child)) {
+    --tw-divide-x-reverse: 0;
+    border-inline-style: var(--tw-border-style);
+    border-inline-start-width: calc(1px * var(--tw-divide-x-reverse));
+    border-inline-end-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+  }
   :where(.divide-y > :not(:last-child)) {
     --tw-divide-y-reverse: 0;
     border-bottom-style: var(--tw-border-style);
     border-top-style: var(--tw-border-style);
     border-top-width: calc(1px * var(--tw-divide-y-reverse));
     border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  }
+  :where(.divide-y-2 > :not(:last-child)) {
+    --tw-divide-y-reverse: 0;
+    border-bottom-style: var(--tw-border-style);
+    border-top-style: var(--tw-border-style);
+    border-top-width: calc(2px * var(--tw-divide-y-reverse));
+    border-bottom-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
   }
   :where(.divide-border > :not(:last-child)) {
     border-color: var(--color-border);
@@ -778,6 +797,9 @@
     font-weight: var(--font-weight-bold);
     color: var(--color-inverted);
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -807,6 +829,10 @@
     opacity: 40%;
   }
   .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
@@ -904,8 +930,14 @@
   .bg-\[\#EAEDFF\] {
     background-color: #EAEDFF;
   }
+  .bg-\[\#F2F3FF80\] {
+    background-color: #F2F3FF80;
+  }
   .bg-\[\#F2F3FF\] {
     background-color: #F2F3FF;
+  }
+  .bg-\[\#F2F3FF\]\/50 {
+    background-color: color-mix(in oklab, #F2F3FF 50%, transparent);
   }
   .bg-\[\#FAF8FF\] {
     background-color: #FAF8FF;
@@ -1092,6 +1124,9 @@
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
+  }
+  .py-6\.25 {
+    padding-block: calc(var(--spacing) * 6.25);
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
@@ -1408,8 +1443,17 @@
   .text-\[\#90A8FF\] {
     color: #90A8FF;
   }
+  .text-\[\#131B2E\] {
+    color: #131B2E;
+  }
   .text-\[\#00174B\] {
     color: #00174B;
+  }
+  .text-\[\#444651\] {
+    color: #444651;
+  }
+  .text-\[\#684000\] {
+    color: #684000;
   }
   .text-\[\#757682\] {
     color: #757682;
@@ -1603,6 +1647,14 @@
       --tw-translate-y: calc(var(--spacing) * -6);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
+    @media (hover: hover) {
+      .hover\:hover\:scale-101:hover:hover {
+        --tw-scale-x: 101%;
+        --tw-scale-y: 101%;
+        --tw-scale-z: 101%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
     .hover\:scale-99:hover {
       --tw-scale-x: 99%;
       --tw-scale-y: 99%;
@@ -1613,6 +1665,12 @@
       --tw-scale-x: 101%;
       --tw-scale-y: 101%;
       --tw-scale-z: 101%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+    .hover\:scale-102:hover {
+      --tw-scale-x: 102%;
+      --tw-scale-y: 102%;
+      --tw-scale-z: 102%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
     .hover\:scale-103:hover {
@@ -1669,8 +1727,89 @@
         background-color: color-mix(in oklab, var(--color-primary) 90%, transparent);
       }
     }
+    .hover\:bg-secondary:hover {
+      background-color: var(--color-secondary);
+    }
+    .hover\:bg-secondary\/1:hover {
+      background-color: color-mix(in srgb, #FEA619 1%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-secondary\/1:hover {
+        background-color: color-mix(in oklab, var(--color-secondary) 1%, transparent);
+      }
+    }
+    .hover\:bg-secondary\/90:hover {
+      background-color: color-mix(in srgb, #FEA619 90%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-secondary\/90:hover {
+        background-color: color-mix(in oklab, var(--color-secondary) 90%, transparent);
+      }
+    }
+    .hover\:bg-secondary\/150:hover {
+      background-color: color-mix(in srgb, #FEA619 150%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-secondary\/150:hover {
+        background-color: color-mix(in oklab, var(--color-secondary) 150%, transparent);
+      }
+    }
+    .hover\:bg-third:hover {
+      background-color: var(--color-third);
+    }
+    .hover\:bg-third\/20:hover {
+      background-color: color-mix(in srgb, #684000 20%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-third\/20:hover {
+        background-color: color-mix(in oklab, var(--color-third) 20%, transparent);
+      }
+    }
+    .hover\:bg-third\/30:hover {
+      background-color: color-mix(in srgb, #684000 30%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-third\/30:hover {
+        background-color: color-mix(in oklab, var(--color-third) 30%, transparent);
+      }
+    }
+    .hover\:bg-third\/50:hover {
+      background-color: color-mix(in srgb, #684000 50%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-third\/50:hover {
+        background-color: color-mix(in oklab, var(--color-third) 50%, transparent);
+      }
+    }
+    .hover\:bg-third\/70:hover {
+      background-color: color-mix(in srgb, #684000 70%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-third\/70:hover {
+        background-color: color-mix(in oklab, var(--color-third) 70%, transparent);
+      }
+    }
+    .hover\:bg-third\/80:hover {
+      background-color: color-mix(in srgb, #684000 80%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-third\/80:hover {
+        background-color: color-mix(in oklab, var(--color-third) 80%, transparent);
+      }
+    }
+    .hover\:bg-third\/90:hover {
+      background-color: color-mix(in srgb, #684000 90%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-third\/90:hover {
+        background-color: color-mix(in oklab, var(--color-third) 90%, transparent);
+      }
+    }
     .hover\:text-background:hover {
       color: var(--color-background);
+    }
+    .hover\:text-secondary:hover {
+      color: var(--color-secondary);
     }
     .hover\:text-white:hover {
       color: var(--color-white);
@@ -1717,6 +1856,9 @@
     .max-lg\:w-full {
       width: 100%;
     }
+    .max-lg\:gap-8 {
+      gap: calc(var(--spacing) * 8);
+    }
     .max-lg\:gap-12 {
       gap: calc(var(--spacing) * 12);
     }
@@ -1728,8 +1870,8 @@
     .max-md\:items-center {
       align-items: center;
     }
-    .max-md\:justify-center {
-      justify-content: center;
+    .max-md\:gap-6 {
+      gap: calc(var(--spacing) * 6);
     }
     .max-md\:gap-8 {
       gap: calc(var(--spacing) * 8);
@@ -1803,6 +1945,9 @@
     .md\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
+    .md\:items-start {
+      align-items: flex-start;
+    }
     .md\:items-stretch {
       align-items: stretch;
     }
@@ -1820,6 +1965,9 @@
     }
     .md\:pb-8 {
       padding-bottom: calc(var(--spacing) * 8);
+    }
+    .md\:text-center {
+      text-align: center;
     }
     .md\:text-\[32px\]\/10 {
       font-size: 32px;
@@ -2095,6 +2243,11 @@
   inherits: false;
   initial-value: 100%;
 }
+@property --tw-divide-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-divide-y-reverse {
   syntax: "*";
   inherits: false;
@@ -2248,6 +2401,7 @@
       --tw-skew-y: initial;
       --tw-text-shadow-color: initial;
       --tw-text-shadow-alpha: 100%;
+      --tw-divide-x-reverse: 0;
       --tw-divide-y-reverse: 0;
       --tw-blur: initial;
       --tw-brightness: initial;
