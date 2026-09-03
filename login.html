@@ -8,7 +8,7 @@
     <link href="./src/output.css" rel="stylesheet" />
 
 </head>
-<body>
+<body class="bg-radial from-background/50 to-primary">
     <header class="hrader bg-background/50 sticky">
         <div class="container flex justify-between text-center items-center py-3.5">
             <div class="row gap-12 justify-between">
@@ -24,7 +24,7 @@
             <div class="hidden md:row">
                 <ul class="flex gap-[7.99px]">
                     <li><button class=""><img src="./Assets/imgs/index-page/header/lang.svg" alt="language" /></button></li>
-                    <li><a href="./login.html"><img src="./Assets/imgs/index-page/header/avatar.svg" alt="avatar" /></a>
+                    <li class="hidden"><a href="./login.html"><img src="./Assets/imgs/index-page/header/avatar.svg" alt="avatar" /></a>
                     </li>
                 </ul>
             </div>
@@ -35,44 +35,79 @@
             <div class="logo">
                 <a href="./index.html" class="logo-font">Alphabet English Academy</a>
             </div>
-            <div class="col gap-8 p-12 border border-border/30 rounded-xl">
+            <div class="col gap-8 p-12 border border-border/30 rounded-xl bg-white/65">
                 <div class="col gap-1.5">
                     <h2>Welcome Back</h2>
                     <p>Continue your journey to English mastery.</p>
                 </div>
-                <div class="FORM col w-full">
-                    <form action="#" method="post" class="col gap-6 w-full">
-                        <div class="col items-start gap-2.5 w-full">
-                            <label class="text-sm/5 font-medium text-bold" for="email">Email Address</label>
-                            <div class="row gap-3 border border-border rounded-lg bg-[#FAF8FF] py-3.5 px-4 w-full focus-within:border-primary focus-within:ring-2 focus-within:ring-primary">
-                                <img src="./Assets/imgs/Login-Reg-Page/mail.svg" alt="eMail icone" />
-                                <input class="w-full focus:border-primary outline-none font-normal text-base/[100%]" type="email" id="email" name="email" placeholder="name@example.com" required  />
+                <form action="#" method="post" class="col gap-6 w-full">
+                    <div class="col items-start gap-2.5 w-full">
+                        <label class="text-sm/5 font-medium text-bold" for="email">Email Address</label>
+                        <div class="row gap-3 border border-border rounded-lg bg-[#FAF8FF] py-3.5 px-4 w-full focus-within:border-primary focus-within:ring-2 focus-within:ring-primary">
+                            <img src="./Assets/imgs/Login-Reg-Page/mail.svg" alt="eMail icone" />
+                            <input class="w-full focus:border-primary outline-none font-normal text-base/[100%]" type="email" id="email" name="email" placeholder="name@example.com" required  />
+                        </div>
+                    </div>
+                    <div class="col items-start gap-2.5 w-full">
+                        <div class="row justify-between w-full">
+                            <label class="text-sm/5 font-medium text-bold" for="password">Password</label>
+                            <a class="text-sm/5 font-medium text-primary" href="#">Forgot Password?</a>
+                        </div>
+                        <div class="row justify-between border border-border rounded-lg bg-[#FAF8FF] py-3.5 px-4 w-full focus-within:border-primary focus-within:ring-2 focus-within:ring-primary">
+                            <div class="row gap-3 w-full">
+                                <img src="./Assets/imgs/Login-Reg-Page/lock.svg" alt="lock icone" />
+                                <input class="w-full focus:border-primary outline-none font-normal text-base/[100%]"
+                                    type="password" id="password" name="password" placeholder="••••••••" required  />
                             </div>
                         </div>
-                        <div class="col items-start gap-2.5 w-full">
-                            <div class="row justify-between w-full">
-                                <label class="text-sm/5 font-medium text-bold" for="password">Password</label>
-                                <a class="text-sm/5 font-medium text-primary" href="#">Forgot Password?</a>
-                            </div>
-                            <div class="row justify-between border border-border rounded-lg bg-[#FAF8FF] py-3.5 px-4 w-full focus-within:border-primary focus-within:ring-2 focus-within:ring-primary">
-                                <div class="row gap-3 w-full">
-                                    <img src="./Assets/imgs/Login-Reg-Page/lock.svg" alt="lock icone" />
-                                    <input class="w-full focus:border-primary outline-none font-normal text-base/[100%]"
-                                        type="password" id="password" name="password" placeholder="••••••••" required  />
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
+                    <div class="w-full justify-start row gap-2">
+                        <input class="border-border rounded checked:border-primary  cursor-pointer accent-primary"
+                             type="checkbox" id="remember">
+                        <label class="text-sm/5 font-medium text-inverted" for="remember">Remember this device</label>
+                    </div>
+                    <button class="w-full justify-center row rounded-lg py-3.5 gap-2 bg-primary hover:shadow-lg hover:scale-95 hover:bg-primary/90 transition-all">
+                        <span class="text-white text-sm/5 font-medium">Sign In</span>
+                        <img src="./Assets/imgs/Login-Reg-Page/login.svg" alt="LogIn" />
+                    </button>
+                </form>
+                <div class="relative w-full">
+                    <div class="absolute w-full inset-0 row">
+                        <span class="border-t border-border w-full"></span>
+                    </div>
+                    <div class="relative row justify-center">
+                        <span class="bg-white/90 text-inverted/70 text-xs/4 font-semibold px-4">OR CONTINUE WITH</span>
+                    </div>
                 </div>
-                
+                <div class="row justify-between gap-6 w-full">
+                    <button class="justify-center row rounded-lg border border-border px-10.5 py-3.25 gap-2 bg-[#FAF8FF] hover:shadow-lg hover:scale-95 hover:bg-[#FAF8FF]/90 transition-all">
+                        <img src="./Assets/imgs/Login-Reg-Page/google.svg" alt="Google Logo" />
+                        <span class="text-bold text-sm/5 font-medium">Google</span>
+                    </button>
+                    <button class="justify-center row rounded-lg border border-border px-10.5 py-3.25 gap-2 bg-[#FAF8FF] hover:shadow-lg hover:scale-95 hover:bg-[#FAF8FF]/90 transition-all">
+                        <img src="./Assets/imgs/Login-Reg-Page/apple.svg" alt="Apple Logo" />
+                        <span class="text-bold text-sm/5 font-medium">Apple</span>
+                    </button>
+                </div>
+                <div class="text-sm/5.25 font-normal text-inverted">
+                    Don't have an account? <span class="text-primary"><a href="./regPag.html">Sign Up Free</a></span>
+                </div>
             </div>
-            <div class="row">
+
+            <div class="row gap-1">
                 <img src="./Assets/imgs/Login-Reg-Page/qMark.svg" alt="Qustion Mark">
-                <span class="text-sm/5 font-medium text-bold">Contact Academy Support</span>
+                <a href="#" class="text-sm/5 font-medium text-inverted/50">Contact Academy Support</a>
             </div>
-            
         </div>
-        
     </section>
+    <footer class="py-6 bg-background/40">
+        <div class="container col gap-6 md:row md:justify-between text-xs/4 font-semibold text-inverted">
+            <span>© 2024 Alphabet English Academy. All rights reserved.</span>
+            <div class="row gap-6">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
