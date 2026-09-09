@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="./src/output.css" />
+</head>
+
+<body>
+    <header class="hrader bg-[#FAF8FF] sticky">
+        <div class="container flex justify-between text-center items-center max-lg:gap-4 py-3.5">
+            <div class="flex w-full md:w-2/3 gap-12 items-center">
+                <a href="./adminDashboard.html" class="hidden lg:block text-2xl font-bold text-primary">Dashboard</a>
+                <div
+                    class="row gap-3 border border-border rounded-lg bg-[#FAF8FF] py-3.5 px-4 w-full focus-within:border-primary focus-within:ring-2 focus-within:ring-primary">
+                    <img src="./Assets/imgs/AdminDashboard/search.svg" alt="Search icone" />
+                    <input class="w-full focus:border-primary outline-none font-normal text-base/[100%]" type="text"
+                        id="search" name="search" placeholder="Search users, transactions, logs..." />
+                </div>
+                <nav class="hidden lg:block">
+                    <ul class="flex gap-8 trxt-inverted">
+                        <li><a href="./tutorsMgmt.html" class="nav-link">Tutors</a></li>
+                        <li><a href="./StdMgmt.html" class="nav-link">Students</a></li>
+                        <li><a href="./coursesMgmt.html" class="nav-link">Courses</a></li>
+                        <li><a href="./financialsMgmt.html" class="nav-link">Financials</a></li>
+                        <li><a href="./adminSetting.html" class="nav-link">Settings</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu lg:hidden hover:cursor-pointer">
+                <img src="./Assets/imgs/index-page/header/menu.svg" alt="Menu" />
+            </div>
+            <button class="hidden lg:block">
+                <img src="./Assets/imgs/AdminDashboard/notifications.svg" alt="Notifications Icon" />
+            </button>
+        </div>
+    </header>
+
+</body>
+
+</html>
